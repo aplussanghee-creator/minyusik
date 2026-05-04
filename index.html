@@ -181,10 +181,8 @@
         <!-- [2] 상품안내 -->
         <div id="products" class="section-block scroll-mt-12 p-5">
             <h2 class="text-[18px] font-bold mb-1">메리츠화재 주요 상품</h2>
-            <p class="text-[13px] text-gray-500 mb-5">상품을 누르시면 내보험보장진단으로 연결됩니다</p>
-
             <div class="space-y-3">
-                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4 active:bg-gray-50 cursor-pointer" onclick="openDiagnosis()">
+                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">
                         <i class="fas fa-hospital text-blue-500 text-xl"></i>
                     </div>
@@ -192,10 +190,9 @@
                         <p class="text-[15px] font-bold text-gray-900">실손의료보험</p>
                         <p class="text-[12px] text-gray-500 mt-0.5">병원비 걱정 없는 기본 필수 보장</p>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
                 </div>
 
-                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4 active:bg-gray-50 cursor-pointer" onclick="openDiagnosis()">
+                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center flex-shrink-0">
                         <i class="fas fa-shield-alt text-red-400 text-xl"></i>
                     </div>
@@ -203,10 +200,9 @@
                         <p class="text-[15px] font-bold text-gray-900">암보험</p>
                         <p class="text-[12px] text-gray-500 mt-0.5">암 진단부터 치료까지 든든한 보장</p>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
                 </div>
 
-                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4 active:bg-gray-50 cursor-pointer" onclick="openDiagnosis()">
+                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center flex-shrink-0">
                         <i class="fas fa-car text-yellow-500 text-xl"></i>
                     </div>
@@ -214,10 +210,9 @@
                         <p class="text-[15px] font-bold text-gray-900">운전자보험</p>
                         <p class="text-[12px] text-gray-500 mt-0.5">교통사고 법적 비용 · 벌금 보장</p>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
                 </div>
 
-                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4 active:bg-gray-50 cursor-pointer" onclick="openDiagnosis()">
+                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center flex-shrink-0">
                         <i class="fas fa-tooth text-green-500 text-xl"></i>
                     </div>
@@ -225,10 +220,9 @@
                         <p class="text-[15px] font-bold text-gray-900">치아보험</p>
                         <p class="text-[12px] text-gray-500 mt-0.5">임플란트 · 충치치료 비용 보장</p>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
                 </div>
 
-                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4 active:bg-gray-50 cursor-pointer" onclick="openDiagnosis()">
+                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center flex-shrink-0">
                         <i class="fas fa-child text-purple-500 text-xl"></i>
                     </div>
@@ -236,10 +230,9 @@
                         <p class="text-[15px] font-bold text-gray-900">어린이보험</p>
                         <p class="text-[12px] text-gray-500 mt-0.5">아이의 건강한 미래를 위한 보장</p>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
                 </div>
 
-                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4 active:bg-gray-50 cursor-pointer" onclick="openDiagnosis()">
+                <div class="border border-gray-200 rounded-2xl p-4 flex items-center gap-4">
                     <div class="w-12 h-12 rounded-xl bg-orange-50 flex items-center justify-center flex-shrink-0">
                         <i class="fas fa-umbrella text-meritz-main text-xl"></i>
                     </div>
@@ -247,7 +240,6 @@
                         <p class="text-[15px] font-bold text-gray-900">종합보험</p>
                         <p class="text-[12px] text-gray-500 mt-0.5">다양한 위험을 하나로 통합 보장</p>
                     </div>
-                    <i class="fas fa-chevron-right text-gray-300 text-sm"></i>
                 </div>
             </div>
 
@@ -311,7 +303,7 @@
 
     <!-- Bottom CTA Bar -->
     <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-[480px] bg-white border-t border-gray-200 px-4 py-3 flex gap-2 z-50 pb-safe shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
-        <button onclick="callPhone()" class="flex-1 h-12 bg-meritz-main text-white font-bold text-[15px] rounded-xl flex items-center justify-center gap-2 shadow-sm transition active:bg-meritz-dark">
+        <button onclick="openContactSheet()" class="flex-1 h-12 bg-meritz-main text-white font-bold text-[15px] rounded-xl flex items-center justify-center gap-2 shadow-sm transition active:bg-meritz-dark">
             <i class="fas fa-phone-alt"></i> 전화 상담
         </button>
         <button onclick="sharePage()" class="w-28 h-12 flex-shrink-0 bg-gray-800 text-white font-bold text-[14px] rounded-xl flex items-center justify-center gap-2 shadow-sm transition active:bg-gray-900">
@@ -319,6 +311,34 @@
         </button>
     </div>
 
+
+    <!-- 전화상담 바텀시트 -->
+    <div id="contactSheet" class="fixed inset-0 z-[300] hidden" onclick="closeContactSheet()">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div id="contactPanel" class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] bg-white rounded-t-3xl px-6 pt-6 pb-10 translate-y-full transition-transform duration-300 ease-out overflow-y-auto max-h-[90vh]" onclick="event.stopPropagation()">
+            <div class="w-10 h-1 bg-gray-200 rounded-full mx-auto mb-5"></div>
+            <h2 class="text-[18px] font-bold text-gray-900 mb-1">전화 상담 신청</h2>
+            <p class="text-[13px] text-gray-500 mb-5">작성 후 문자로 전송됩니다</p>
+            <div class="space-y-3 mb-4">
+                <input id="contactName" type="text" placeholder="이름" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-[14px] outline-none focus:border-meritz-main">
+                <input id="contactPhone" type="tel" placeholder="연락처 (숫자만)" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-[14px] outline-none focus:border-meritz-main">
+                <textarea id="contactMessage" placeholder="문의 내용" rows="3" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-[14px] outline-none focus:border-meritz-main resize-none"></textarea>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-4 mb-4 space-y-3">
+                <label class="flex items-start gap-3 cursor-pointer">
+                    <input id="contactPrivacy" type="checkbox" class="mt-0.5 w-4 h-4 flex-shrink-0" style="accent-color: #F04E23;">
+                    <span class="text-[12px] text-gray-600 leading-relaxed">[필수] 개인정보 수집 및 이용에 동의합니다. (이름, 연락처 수집 / 보험상담 목적)</span>
+                </label>
+                <label class="flex items-start gap-3 cursor-pointer">
+                    <input id="contactMarketing" type="checkbox" class="mt-0.5 w-4 h-4 flex-shrink-0" style="accent-color: #F04E23;">
+                    <span class="text-[12px] text-gray-600 leading-relaxed">[선택] 마케팅 정보 수신에 동의합니다. (보험 혜택 및 이벤트 안내)</span>
+                </label>
+            </div>
+            <button onclick="submitContact()" class="w-full py-3.5 rounded-xl font-bold text-white text-[15px] active:opacity-80 transition bg-meritz-main">
+                신청하기
+            </button>
+        </div>
+    </div>
 
     <!-- Toast -->
     <div id="toast" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/80 text-white px-5 py-3 rounded-lg opacity-0 transition-opacity duration-300 pointer-events-none z-50 text-sm font-medium w-[80%] text-center">
@@ -334,6 +354,35 @@
     }
 
     function callPhone() { window.location.href = 'tel:010-2754-6172'; }
+
+    function openContactSheet() {
+        const sheet = document.getElementById('contactSheet');
+        const panel = document.getElementById('contactPanel');
+        sheet.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(() => panel.classList.remove('translate-y-full'));
+    }
+    function closeContactSheet() {
+        const panel = document.getElementById('contactPanel');
+        panel.classList.add('translate-y-full');
+        setTimeout(() => {
+            document.getElementById('contactSheet').classList.add('hidden');
+            document.body.style.overflow = '';
+        }, 300);
+    }
+    function submitContact() {
+        const name     = document.getElementById('contactName').value.trim();
+        const phone    = document.getElementById('contactPhone').value.trim();
+        const message  = document.getElementById('contactMessage').value.trim();
+        const privacy  = document.getElementById('contactPrivacy').checked;
+        const marketing = document.getElementById('contactMarketing').checked;
+        if (!name || !phone) { showToast('이름과 연락처를 입력해주세요.'); return; }
+        if (!privacy) { showToast('개인정보 수집 동의가 필요합니다.'); return; }
+        const marketingText = marketing ? '동의' : '미동의';
+        const body = encodeURIComponent(`[전화상담신청]\n이름: ${name}\n연락처: ${phone}\n문의내용: ${message || '없음'}\n마케팅수신: ${marketingText}`);
+        window.location.href = `sms:010-2754-6172?body=${body}`;
+        closeContactSheet();
+    }
 
     async function sharePage() {
         if (navigator.share) {
